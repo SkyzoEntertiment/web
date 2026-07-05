@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HALAMAN PEMBAYARAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WEB PAYMENT VARZZ</h1>
+            <p>SOLUSI ANDA UNTUK MELAKUKAN PEMBAYARAN DENGAN CEPAT</p>
+            <P>SILAHKAN PILIH METODE PEMBAYARAN DIBAWAH</P>
+        </div>
+
+        <div class="methods-grid">
+            <!-- DANA -->
+            <div class="payment-card" onclick="tampilkanInfo('dana')">
+                <div class="icon dana">
+                    <span>DANA</span>
+                </div>
+                <div class="info">
+                    <h3>DANA</h3>
+                    <p>TRANSFER KE NOMOR DANA</p>
+                </div>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+
+            <div class="payment-card" onclick="tampilkanInfo('gopay')">
+                <div class="icon gopay">
+                    <i class="fa fa-money"></i>
+                </div>
+                <div class="info">
+                    <h3>GOPAY</h3>
+                    <p>BAYAR LEWAT NOMOR GOPAY</p>
+                </div>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+
+            <div class="payment-card" onclick="tampilkanInfo('seabank')">
+                <div class="icon seabank">
+                    <i class="fa fa-university"></i>
+                </div>
+                <div class="info">
+                    <h3>SEABANK</h3>
+                    <p>BAYAR LEWAT NOMOR REKENING</p>
+                </div>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+
+            <div class="payment-card" onclick="tampilkanInfo('qris')">
+                <div class="icon qris">
+                    <i class="fa fa-qrcode"></i>
+                </div>
+                <div class="info">
+                    <h3>QRIS</h3>
+                    <p>SCAN KODE QR UNTUK MEMBAYAR</p>
+                </div>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+        </div>
+
+        <div id="infoArea" class="info-area">
+            <span class="close-icon" onclick="tutupInfo()">&times;</span>
+            <h3 id="judulInfo"></h3>
+            <div id="kontenInfo"></div>
+            
+            <button onclick="arahkanKeWA()" class="tombol-konfirmasi">KONFIRMASI PEMBAYARAN</button>
+            <button onclick="tutupInfo()" class="tombol-tutup">TUTUP</button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>©  WEB PAYMENT VARZZ | AMAN & TERPERCAYA</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
